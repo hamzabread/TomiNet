@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-#body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body{
+    background: linear-gradient(0deg, #E8F2FF 66.77%, #CBE2FF 83.53%);
+    height: 100vh;
 }
 
-.section1{
-    background-color: #CBE2FF;
-    height: 100vh;
+section{
+    margin-top: 30px;
 }
 
 .head{
@@ -22,27 +22,236 @@
 
 }
 
+.head h1{
+    font-weight: bold;
+}
+
 .navclass{
     display: inline-flex;
-padding: 15px 25px;
-align-items: center;
-border-radius: 15px;
-background: #D8E3F6;
-gap: 40px;
-
+    padding: 15px 25px;
+    align-items: center;
+    border-radius: 15px;
+    background: #D8E3F6;
+    gap: 40px;
 }
 
 .navclass a{
     color: #0E1120;
     font-family: "Roboto", sans-serif;
-
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%;
-text-decoration: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration: none;
 }
 
-.head h1{
-    font-weight: bold;
+.head button{
+    display: inline-flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #0E6AAD;
+    color: white;
+    border: none;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 99px;
+}
+
+.texts{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 17px;
+align-self: stretch;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.explore p{
+    color: #67717D;
+    font-family: "Proto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+}
+
+.explore span{
+    color: #FF0083;
+}
+
+.DNSclaim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+}
+
+.DNSclaim h1{
+    color: #0E1120;
+    font-family: "Roboto", sans-serif;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; 
+}
+
+.DNSclaim p{
+    color: #67717D;
+    font-family: "KH Teka";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+ .search{
+     max-width: 547px;
+    width: 100%;
+ }
+
+
+.bannerinput{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 14px 8px 14px 42px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background: #DFEAFC;
+}
+
+.inputchild{
+    border: none;
+    color: #6E8491;
+    width: 570px;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    background: #DFEAFC;
+}
+
+.searchicon{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.searchbutton{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 12px;
+    padding: 16px 38px;
+    color: #E8F2FF;
+    text-align: center;
+    font-family: "KH Teka";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    background: #222D37;
+    border: none;
+}   
+
+.documentation{
+    display: flex;
+    padding: 16px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #DFEAFC;
+}
+
+@media (max-width: 990px) {
+  .head {
+    gap: 15px;
+  }
+
+  .navclass{
+    display: none;
+  }
+
+  .searchbutton{
+    padding: 16px 32px;
+  }
+
+  .DNSclaim h1{
+    font-size: 36px;
+  }
+
+  section{
+    padding-top: 90px;
+  }
+  .home{
+    gap: 10px;
+  }
+  .inputchild{
+    width: 300px;
+    font-size: 13px;
+  }
+  .DNSclaim p{
+    font-size: 18px;
+  }
+  .DNSclaim{
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .head {
+    gap: 15px;
+  }
+
+  .navclass{
+    display: none;
+  }
+
+  .searchbutton{
+    padding: 16px 32px;
+  }
+
+  .DNSclaim h1{
+    font-size: 36px;
+  }
+
+  section{
+    padding-top: 90px;
+  }
+  .home{
+    gap: 10px;
+  }
+  .inputchild{
+    width: 300px;
+    font-size: 13px;
+  }
+  .DNSclaim p{
+    font-size: 18px;
+  }
+  .DNSclaim{
+    gap: 20px;
+  }
 }

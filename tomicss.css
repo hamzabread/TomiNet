@@ -1,20 +1,22 @@
-*{
-  color: black;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background: linear-gradient(0deg, #E8F2FF 66.77%, #CBE2FF 83.53%);
+body {
     height: 100vh;
+    background: #E7F2FF;
 }
 
-section{
-    margin-top: 30px;
+.hero {
+    background: linear-gradient(0deg, #E8F2FF 66.77%, #CBE2FF 83.53%);
+    width: 100%;
+    flex-shrink: 0;
+    padding-top: 30px;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -22,11 +24,11 @@ section{
 
 }
 
-.head h1{
+.head h1 {
     font-weight: bold;
 }
 
-.navclass{
+.navclass {
     display: inline-flex;
     padding: 15px 25px;
     align-items: center;
@@ -35,7 +37,7 @@ section{
     gap: 40px;
 }
 
-.navclass a{
+.navclass a {
     color: #0E1120;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
@@ -45,7 +47,7 @@ section{
     text-decoration: none;
 }
 
-.head button{
+.head button {
     display: inline-flex;
     padding: 16px 20px;
     justify-content: center;
@@ -57,7 +59,7 @@ section{
     border: none;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -67,35 +69,35 @@ section{
     margin-top: 99px;
 }
 
-.texts{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 17px;
-align-self: stretch;
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    align-self: stretch;
 }
 
-.explore{
+.explore {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.explore p{
+.explore p {
     color: #67717D;
     font-family: "Proto Mono";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; 
+    line-height: 120%;
 }
 
-.explore span{
+.explore span {
     color: #FF0083;
 }
 
-.DNSclaim{
+.DNSclaim {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,16 +106,16 @@ align-self: stretch;
     align-self: stretch;
 }
 
-.DNSclaim h1{
+.DNSclaim h1 {
     color: #0E1120;
     font-family: "Roboto", sans-serif;
     font-size: 74px;
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; 
+    line-height: 110%;
 }
 
-.DNSclaim p{
+.DNSclaim p {
     color: #67717D;
     font-family: "KH Teka";
     font-size: 20px;
@@ -121,13 +123,14 @@ align-self: stretch;
     font-weight: 400;
     line-height: 120%;
 }
- .search{
-     max-width: 547px;
+
+.search {
+    max-width: 547px;
     width: 100%;
- }
+}
 
 
-.bannerinput{
+.bannerinput {
     position: relative;
     display: flex;
     width: 100%;
@@ -139,7 +142,7 @@ align-self: stretch;
     background: #DFEAFC;
 }
 
-.inputchild{
+.inputchild {
     border: none;
     color: #6E8491;
     width: 570px;
@@ -148,17 +151,17 @@ align-self: stretch;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; 
+    line-height: 100%;
     background: #DFEAFC;
 }
 
-.searchicon{
+.searchicon {
     position: absolute;
     left: 15px;
     top: 20px;
 }
 
-.searchbutton{
+.searchbutton {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -170,12 +173,12 @@ align-self: stretch;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; 
+    line-height: 100%;
     background: #222D37;
     border: none;
-}   
+}
 
-.documentation{
+.documentation {
     display: flex;
     padding: 16px 22px;
     justify-content: center;
@@ -185,73 +188,329 @@ align-self: stretch;
     background: #DFEAFC;
 }
 
-@media (max-width: 990px) {
-  .head {
-    gap: 15px;
-  }
+.HotAuctions {
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: url('./assets/hotbackground.png') ;
+    text-align: center;
+   
+}
 
-  .navclass{
-    display: none;
-  }
+.heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 29px;
+    padding-top: 64px;
 
-  .searchbutton{
-    padding: 16px 32px;
-  }
+}
 
-  .DNSclaim h1{
-    font-size: 36px;
-  }
+.anchorstyle {
+    color: #FF0083;
+    text-align: center;
+    font-family: "Proto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
 
-  section{
-    padding-top: 90px;
-  }
-  .home{
-    gap: 10px;
-  }
-  .inputchild{
-    width: 300px;
-    font-size: 13px;
-  }
-  .DNSclaim p{
-    font-size: 18px;
-  }
-  .DNSclaim{
+}
+
+.heading h2 {
+    color: var(--primary-color, #0E1120);
+    text-align: center;
+    font-family: "KH Teka";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    align-self: center;
+}
+
+.heading p {
+    color: #67717D;
+    text-align: center;
+    font-family: "KH Teka";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 626px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* cardstyle */
+
+.cardmainprnt {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-  }
+}
+
+.cardmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    max-width: 315px;
+    width: 100%;
+    padding: 35px 31px;
+    background-image: url('./assets/Group\ 2085661361.png');
+    /* path to your image */
+
+    background-color: #E0ECFA;
+}
+
+
+
+.chldcontianer {
+    display: flex;
+    width: 100%;
+    gap: 33px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 9.457px;
+    background: #DBE7F7;
+}
+
+.cardtitle {
+    padding: 2px 8px;
+
+    border-radius: 32px;
+    background: #D0DEEF;
+}
+
+.cardicon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -28px;
+}
+
+.cardiconh3 {
+    color: var(--primary-color, #0E1120);
+    font-family: "KH Teka";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.cardcom {
+    color: var(--primary-color, #0E1120);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+.carddetailtimemain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+
+.cardtimeshow {
+    display: flex;
+    width: 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.carddetial {
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--frame-color, #E7F2FF);
+    color: var(--primary-color, #0E1120);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cardys {
+    color: var(--primary-color, #0E1120);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.viewmorebttn{
+    display: inline-flex;
+    padding: 18px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #D0DEEF;
+    margin-top: 56px;
+    margin-bottom: 85px;
+    border: none;
+}
+
+
+.ownershipwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.ownershipimg{
+    width: 743.705px;
+    height: 689.435px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.ownershiptextwrapper{
+    display: flex;
+    max-width: 457px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+}
+
+.ownership{
+    position: relative;
+}
+
+.ownershiph2{
+    color: #0E1120;
+    font-family: "KH Teka";
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; 
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    max-width: 350px;
+}
+
+.ownershipp{
+    color: #67717D;
+    font-family: "KH Teka";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    width: 100%;
+}
+
+.bottomrightimg{
+    position: absolute;
+    bottom: -318px;
+    right: -46px;
+}
+
+
+
+@media (max-width: 990px) {
+    .head {
+        gap: 15px;
+    }
+
+    .navclass {
+        display: none;
+    }
+
+    .searchbutton {
+        padding: 16px 32px;
+    }
+
+    .DNSclaim h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding-top: 90px;
+    }
+
+    .home {
+        gap: 10px;
+    }
+
+    .inputchild {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .DNSclaim p {
+        font-size: 18px;
+    }
+
+    .DNSclaim {
+        gap: 20px;
+    }
 }
 
 
 @media (max-width: 600px) {
-  .head {
-    gap: 15px;
-  }
+    .head {
+        gap: 15px;
+    }
 
-  .navclass{
-    display: none;
-  }
+    .navclass {
+        display: none;
+    }
 
-  .searchbutton{
-    padding: 16px 32px;
-  }
+    .searchbutton {
+        padding: 16px 32px;
+    }
 
-  .DNSclaim h1{
-    font-size: 36px;
-  }
+    .DNSclaim h1 {
+        font-size: 36px;
+    }
 
-  section{
-    padding-top: 90px;
-  }
-  .home{
-    gap: 10px;
-  }
-  .inputchild{
-    width: 300px;
-    font-size: 13px;
-  }
-  .DNSclaim p{
-    font-size: 18px;
-  }
-  .DNSclaim{
-    gap: 20px;
-  }
+    section {
+        padding-top: 90px;
+    }
+
+    .home {
+        gap: 10px;
+    }
+
+    .inputchild {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .DNSclaim p {
+        font-size: 18px;
+    }
+
+    .DNSclaim {
+        gap: 20px;
+    }
 }

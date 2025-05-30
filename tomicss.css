@@ -62,7 +62,7 @@ button{
     line-height: 150%;
     text-decoration: none;
     cursor: pointer;
-    position: relative
+    position: relative;
 }
 
 .head button {
@@ -177,6 +177,17 @@ button{
     background: #DFEAFC;
 }
 
+.inputchild:active{
+    border: none;
+    box-shadow: none;
+
+}
+
+.inputchild:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
 .searchicon {
     position: absolute;
     left: 15px;
@@ -220,7 +231,7 @@ button{
     width: 100%;
     flex-shrink: 0;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 64px;
     background: url('./assets/hotbackground.png') ;
     text-align: center;
    
@@ -234,7 +245,6 @@ button{
     justify-content: center;
     gap: 18px;
     margin-bottom: 29px;
-    padding-top: 64px;
 
 }
 
@@ -399,13 +409,14 @@ button{
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+    position: relative;
+    padding-top: 90px;
 }
 
 .ownershipimg{
     max-width: 743.705px;
     max-height: 689.435px;
     flex-shrink: 0;
-    margin-top: 100px;
     width: 100%;
     height: 100%;
 }
@@ -422,6 +433,7 @@ button{
     position: relative;
     max-width: 1440px;
     width: 100%;
+    overflow: hidden;
 }
 
 .ownershiph2{
@@ -456,10 +468,13 @@ button{
 .decen{
     display: flex;
     padding: 70px 100px;
+    justify-content: space-between;
     align-items: center;
     gap: 70px;
     background: #E7F2FF;
     position: relative;
+    overflow: hidden;
+    z-index: 9999;
 }
 
 .descmain{
@@ -551,7 +566,274 @@ button{
     align-items: center;
     position: absolute;
     right: 0;
-    bottom: -190.111px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.earlyaccess{
+    display: flex;
+    max-width: 1440px;
+    padding: 60px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.earlyaccess .earlyaccesswrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+ .earlyaccesstext .earlyaccessh3{
+    color: var(--primary-color, #0E1120);
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding-bottom: 12px;
+}
+
+.earlyaccesstext .earlyaccessp{
+    color: #67717D;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 369px;
+    width: 100%;
+}
+
+.earlyaccesstext{
+    display: flex;
+    max-width: 490px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.earlyaccesswrapper .earlyaccessformwrapper{
+    display: flex;
+    max-width: 479px;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 15px;
+    background: #E7F2FF;
+}
+
+.earlyaccessformwrapper .earlyaccessform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 439px;
+    width: 100%;
+}
+
+.earlyaccessform .nameinput{
+    display: flex;
+    padding: 22px 15px;
+    align-items: center;
+    gap: 47px;
+    width: 100%;
+    border-radius: 15px;
+    background: #E0ECFA;
+    border: none;
+}
+
+.earlyaccessform .emailinput{
+    display: flex;
+    padding: 22px 15px;
+    align-items: center;
+    gap: 47px;
+    width: 100%;
+    border-radius: 15px;
+    background: #E0ECFA;
+    border: none;
+}
+
+.earlyaccessform .earlyaccessbttn{
+    display: flex;
+    max-height: 58px;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 439px;
+    width: 100%;
+    border-radius: 15px;
+    background: #222D37;
+    border: none;
+    color: #E8F2FF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.domainclaim{
+    width: 100%;
+    flex-shrink: 0;
+    background: url('./assets/AdobeStock_221478691\ [Converted]\ 2\ \(1\).png');
+    background-blend-mode: screen, normal;
+    padding: 91.25px 120px;
+}
+
+.domainclaimmain{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    text-align: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-direction: column;
+    border-radius: 25px;
+    background: url('/assets/Frame\ 17.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.domainclaimtexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.domainclaimh3{
+    color: var(--systemGrey-900, #212121);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    max-width: 726px;
+    width: 100%;
+}
+.domainclaimh3 span{
+    color: var(--primary-color, #0E1120);
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.domainclaimp{
+    color: #000;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    max-width: 726px;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    padding: 50px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;   
+    background: #E7F2FF;
+}
+
+.footer .footermain {
+    display: flex;
+    max-width: 1200px;
+    width:100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.footermain .footercolumn1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 88px;
+}
+
+.footercolumn1son {
+    display: flex;
+    gap: 15px;
+}
+
+.footermain .footercolumn2{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.footercolumn2 .footercolumn2son{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    list-style: none;
+}
+
+.footercolumn2son .footercolumnheading{
+    color: var(--systemGrey-900, #212121);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    text-wrap: nowrap;
+    width: 100%;
+    text-decoration: none;
+}
+
+.footercolumn2son a{
+    color: var(--systemGrey-900, #212121);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    opacity: 0.5;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.footer .footerbottom{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 177px;
+}
+
+.footerbottom a{
+    color: var(--systemGrey-900, #212121);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 @media (max-width: 990px) {
@@ -571,10 +853,6 @@ button{
         font-size: 36px;
     }
 
-    section {
-        padding-top: 90px;
-    }
-
     .home {
         gap: 10px;
     }
@@ -591,8 +869,128 @@ button{
     .DNSclaim {
         gap: 20px;
     }
-}
 
+    .decen{
+        flex-direction: column;
+        padding: 85px 0;
+    }
+
+    .heading h2{
+        font-size: 45px;
+    }
+
+    .heading p{
+        font-size: 15px;
+    }
+
+    .earlyaccess{
+        padding: 60px 0;
+    }
+
+    .earlyaccess .earlyaccesswrapper{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        padding: 64px 0;
+    }
+
+    .earlyaccesstext{
+        margin-right: 0;
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .earlyaccesstext .earlyaccessh3{
+        max-width: 100%;
+        font-size: 36px;
+    }
+    .earlyaccesstext .earlyaccessp{
+        max-width: 100%;
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .earlyaccessform{
+        margin-right: 0;
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .ownershipwrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 64px 32px;
+    }
+
+    .ownershipimg {
+        max-width: 800px;
+        height: auto;
+    }
+
+    .ownershiptextwrapper{
+        margin-right: 0;
+        max-width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bottomrightimg{
+        display: none;
+    }
+
+    .ownershiph2{
+        max-width: 100%;
+        font-size: 36px;
+    }
+
+    .ownershipp{
+        max-width: 100%;
+        font-size: 18px;
+    }
+    
+    .domainclaim {
+        padding: 60px 40px;
+    }
+    
+    .domainclaimmain {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: cover;
+    }
+    
+    .domainclaimh3, .domainclaimh3 span {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    
+    .domainclaimp {
+        font-size: 18px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer{
+        padding: 60px 0;
+    }
+
+    .footermain .footercolumn2{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .footer .footermain{
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;;
+    }
+
+}
 
 @media (max-width: 600px) {
     .head {
@@ -611,10 +1009,6 @@ button{
         font-size: 36px;
     }
 
-    section {
-        padding-top: 90px;
-    }
-
     .home {
         gap: 10px;
     }
@@ -631,4 +1025,88 @@ button{
     .DNSclaim {
         gap: 20px;
     }
+
+    .decenheader{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desccolumn{
+        justify-content: center;
+    }
+
+    .descmaim{
+        justify-content: center;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .earlyaccess{
+        padding: 0;
+    }
+
+    .domainclaimh3, .domainclaimh3 span{
+        font-size: 32px;
+    }
+
+    .domainclaimp{
+        font-size: 15px;
+    }
+
+    .domainclaimh3, .domainclaimh3 span, .domainclaimp {
+        max-width: 100%;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .domainclaimp {
+        font-size: 10px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .ownershiph2{
+        font-size: 26px;
+        max-width: 100%;
+        text-wrap: nowrap;
+    }
+
+    .ownershipp{
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .ownershiptextwrapper{
+        padding: 0;
+    }
+
+    .earlyaccesstext .earlyaccessh3{
+        font-size: 26px;
+        max-width: 100%;
+    }
+
+    .earlyaccesstext .earlyacessp{
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+    .heading h2{
+        font-size: 36px;
+    }
+
+    .heading p{
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .decenh3{
+        font-size: 36px;
+    }
+
+    .footerbottom{
+        margin-top: 50px !important;
+    }
+
 }
+

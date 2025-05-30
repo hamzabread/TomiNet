@@ -783,8 +783,8 @@ button{
 }
 
 .footermain .footercolumn2{
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template:  1fr / repeat(4, 1fr);
     gap: 100px;
 }
 
@@ -979,9 +979,8 @@ button{
     }
 
     .footermain .footercolumn2{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 100px;
     }   
 
     .footer .footermain{
